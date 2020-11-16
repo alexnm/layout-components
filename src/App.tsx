@@ -23,6 +23,10 @@ export default function App() {
                 <Square />
                 <Square />
                 <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
               </Inline>
             </Stack>
           </Row>
