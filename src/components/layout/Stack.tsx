@@ -7,16 +7,17 @@ export interface StackProps {
   wrap?: boolean
 }
 
-export const Stack = styled.div<StackProps>(({ gap = 0, align = 'flex-start', wrap = false }) =>
-  css({
-    display: 'flex',
-    justifyContent: 'flex-start',
-    flexDirection: 'column',
-    alignItems: align,
-    flexWrap: wrap ? 'wrap' : 'nowrap',
+export const Stack = styled.div<StackProps>(
+  ({ gap = 0, align = 'flex-start', wrap = false }) =>
+    css({
+      display: 'flex',
+      justifyContent: 'flex-start',
+      flexDirection: 'column',
+      alignItems: align,
+      flexWrap: wrap ? 'wrap' : 'nowrap',
 
-    '& > :not(:first-child)': {
-      marginTop: gap,
-    },
-  })
+      '& > :not(:first-child)': {
+        marginTop: gap,
+      },
+    })
 )

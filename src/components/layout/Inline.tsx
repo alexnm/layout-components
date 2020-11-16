@@ -7,15 +7,16 @@ export interface InlineProps {
   wrap?: boolean
 }
 
-export const Inline = styled.div<InlineProps>(({ gap = 0, align = 'flex-start', wrap = false }) =>
-  css({
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: align,
-    flexWrap: wrap ? 'wrap' : 'nowrap',
+export const Inline = styled.div<InlineProps>(
+  ({ gap = 0, align = 'flex-start', wrap = false }) =>
+    css({
+      display: 'flex',
+      justifyContent: 'flex-start',
+      alignItems: align,
+      flexWrap: wrap ? 'wrap' : 'nowrap',
 
-    '& > :not(:first-child)': {
-      marginLeft: gap,
-    },
-  })
+      '& > :not(:first-child)': {
+        marginLeft: gap,
+      },
+    })
 )

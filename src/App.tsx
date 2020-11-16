@@ -19,7 +19,7 @@ export default function App() {
           <Row>
             <Stack gap={2}>
               <h2>Inline</h2>
-              <Inline gap={2}>
+              <Inline gap={2} wrap>
                 <Square />
                 <Square />
                 <Square />
@@ -79,8 +79,8 @@ export default function App() {
                     <Square />
                   </Box>
                   <Box>
-                    This is a randome text This is another randome textThis is a randome text This
-                    is another randome text
+                    This is a randome text This is another randome textThis is a
+                    randome text This is another randome text
                   </Box>
                   <Box>
                     <Square />
@@ -95,14 +95,14 @@ export default function App() {
 
             <Grid columns="1fr 1fr 1fr" rowGap={4} columnGap={4}>
               <span>
-                This is a randome text This is another randome textThis is a randome text This is
-                another randome text
+                This is a randome text This is another randome textThis is a
+                randome text This is another randome text
               </span>
               <Square size={6} />
               <Square size={6} />
               <span>
-                This is a randome text This is another randome textThis is a randome text This is
-                another randome text
+                This is a randome text This is another randome textThis is a
+                randome text This is another randome text
               </span>
             </Grid>
           </Stack>
